@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+const Buttom = () => {
+  const [valor, setValor] = useState(0);
+
+  const moreValor = () => {
+    setValor(valor + 1);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="divbt">
+      <p>Valor é: {valor}</p>
+      <button onClick={moreValor}>Aumentar o Valor</button>
     </div>
   );
-}
+};
 
-export default App;
+export default Buttom;
+
+

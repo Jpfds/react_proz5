@@ -13,6 +13,30 @@
   }
 }
 
+.divbt{
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+p{
+  padding-bottom: 40px;
+  color: white;
+}
+button{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 50%;
+  padding: 10px;
+}
+body{
+  background-color: blue;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
